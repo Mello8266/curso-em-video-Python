@@ -5,4 +5,4 @@ if dis <= 200:
 else:
     preco = dis * 0.45
 
-print('O valor da passagem será de: R${}'.format(preco))
+print(f'O valor da passagem será de: R${preco}')
