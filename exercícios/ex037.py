@@ -1,6 +1,6 @@
 print('Conversão númerica')
+escolha = int(input('''Escolha uma dessas conversões:\n[1] para binário\n[2] para octal \n[3] para hexadecimal:\nSua opção: '''))
 num = int(input('Isira um número inteiro: '))
-escolha = int(input('Escolha uma dessas conversões: 1 para binário, 2 para octal ou 3 para hexadecimal: '))
 
 if escolha == 1:
     str = bin(num)

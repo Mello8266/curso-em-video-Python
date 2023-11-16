@@ -21,5 +21,8 @@ print(f'{cores["azul"]}Você escolheu {p1}{cores["limpa"]} x {cores["vermelho"]}
 if p1 == 'pedra' and pc == 'tesoura' or p1 == 'tesoura' and pc == 'papel' or p1 == 'papel' and pc == 'pedra':
     print(f'{cores["azul"]}Você venceu{cores["limpa"]}...\nteve sorte!')
 
+elif p1 == 'pedra' and pc == 'pedra' or p1 == 'papel' and pc == 'papel' or p1 == 'tesoura' and pc == 'tesoura':
+    print('Empate!')
+
 else:
     print(f'Eu venci. {cores["vermelho"]}HAHAHAHAHAH{cores["limpa"]}')

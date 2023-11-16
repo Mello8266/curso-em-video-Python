@@ -3,9 +3,12 @@ sal = float(input('Qual o seu salário? R$'))
 tempo = int(input('Irá parcelar em quantos anos? '))
 
 parcela = valor / (tempo * 12)
-if parcela > sal / 0.30:
-    print('\033[0:31mEmpréstimo negado!')
-    print(f'Seu salário R${sal:.2f} não é suficiente para pagar as parcelas {parcela}')
+print(f'A prestação mensal da casa é de R${parcela:.2f}, em {tempo} anos')
+
+min = sal * 0.3
+if parcela > min:
+    print('Empréstimo negado!')
+    print('As parcelas passam do valor de 30% do seu salário')
 
 else:
-    print(f'Você pagará parcelas de {parcela:.2f} por mês, ao longo de {tempo} anos')
+    print('Empréstimo concedido.')

@@ -1,6 +1,6 @@
 print('Insira dois valores e o computador ira analisa-los!')
 num1 = int(input('Primerio valor: '))
-num2 = int(input('Segundo valor: '))
+num2 = int(input('Segundo valor:  '))
 
 if num1 > num2:
     print(f'O primeiro valor {num1} é maior que o segundo {num2}')

@@ -5,7 +5,7 @@ media = (nota1 + nota2) / 2
 print(f'A média do aluno é {media:.2f}')
 
 if media >= 7:
-    print('Aluno aprovado')
+    print('Aluno aprovado ')
 
 elif media < 5:
     print('Aluno reprovado')

@@ -3,8 +3,7 @@ b = float(input('Insira a segunda medida: '))
 c = float(input('Insira a terceira medida: '))
 
 print('-' * 20)
-
-if a + b > c or b + c > a or c + a > b:
+if a + b > c and b + c > a and c + a > b:
     if a == b == c:
         print('Suas medidas são iguais\nEntão forma se um triângulo equilátero')
 

@@ -3,7 +3,7 @@ from datetime import date
 sexo = int(input('Informe seu sexo: 1 para masculino e 2 para feminino: '))
 dt_nasc = int(input('Insira o ano que nasceu: '))
 
-hoje = date.today()
+hoje = date.today().year
 idade = hoje - dt_nasc
 
 if sexo == 2:
@@ -15,8 +15,10 @@ else:
 
     elif idade < 18:
         falta = 18 - idade
-        print(f'Está cedo jovem, volte daqui {falta} anos')
+        ano = hoje + idade
+        print(f'Está cedo jovem, volte daqui {falta} anos, em {ano}')
 
     else:
         dem = idade - 18
-        print(f'Era pra ter se apresentado a {dem} ano. \nVENHA QUANTO ANTES!!')
+        ano = hoje - dem
+        print(f'Era pra ter se apresentado a {dem} anos, em {ano}. \nVENHA QUANTO ANTES!!')
