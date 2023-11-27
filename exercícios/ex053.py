@@ -8,4 +8,4 @@ if f2 == fin:
 else:
     print('Não é um palindromo')
 
-print(f'Frase: "{f}" \nInverso: "{fin}"')
+print(f'Frase: "{f2}" Inverso: "{fin}"')
