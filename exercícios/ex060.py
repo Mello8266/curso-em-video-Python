@@ -1,8 +1,7 @@
 n = int(input('Insira m número: '))
-m = n
+n += 1
+f = 0
 while n > 1:
-    print(f'1')
     n -= 1
-    f = m * n
-    print(n)
-
+    f += n * n
+    print(f)
