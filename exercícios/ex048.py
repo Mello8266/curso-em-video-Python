@@ -1,6 +1,12 @@
-print('-=-' * 15)
-for c in range (0, 501):
+soma = 0
+total = 0
+print('-=-' * 41)
+for c in range (1, 501, 2):
     if c % 3 == 0:
-        print(c)
+        soma += c
+        total += 1
+        print(c, end=' ')
 
-print('-=-' * 15)
+print('')
+print('-=-' * 41)
+print(f'A soma dos {total} valores é {soma}')
