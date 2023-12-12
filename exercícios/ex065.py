@@ -1,13 +1,11 @@
 # Tratando vários valores
-soma = 0
-count = 0
+soma = count = 0
 while True:
     n = int(input(f'Insira o {count + 1}º valor: '))
     soma += n
     count += 1
     if count == 1:
-        maior = n
-        menor = n
+        maior = menor = n
 
     else:
         if n > maior:
