@@ -1,7 +1,9 @@
+# PA de 10 termos
 termo = int(input('Insira o primeiro termo da PA: '))
 razao = int(input('Insira a razão da PA: '))
-decimo = termo + (10 - 1) * razao
-while termo != decimo:
-    print(termo, end=' ')
+count = 1
+while count <= 10:
+    print(f'{count}º termo: {termo}')
     termo += razao
-print(f'{termo}')
+    count += 1
+print('fim')
