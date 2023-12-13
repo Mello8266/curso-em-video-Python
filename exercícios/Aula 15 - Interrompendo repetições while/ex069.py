@@ -6,9 +6,9 @@ while True:
     print(f'{"CADASTRAMENTO":^45}')
     print('=-=' * 15)
 
-    #nome = str(input('Insira o nome: '))
+    nome = str(input('Insira o nome: '))
     idade = int(input('Insira a idade: '))
-    sexo = str(input('Insira o sexo: [M/F] ')).strip().lower()[0]
+    sexo = ''
     while sexo not in ('mf'):
         sexo = str(input('Insira o sexo: [M/F] ')).strip().lower()[0]
 
@@ -24,7 +24,7 @@ while True:
     cont += 1
 
     print('=-=' * 15)
-    conf = str(input('Deseja continuar adicionando dados? [S/N] ')).strip().lower()[0]
+    conf = ''
     while conf not in('s', 'n'):
         conf = str(input('Deseja continuar adicionando dados? [S/N] ')).strip().lower()[0]
     print('-' * 45)

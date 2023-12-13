@@ -16,7 +16,9 @@ while True:
     pc = randint(0, 10)
     print('=-=' * 20)
     pessoa = int(input('Diga um valor: '))
-    ip = str(input('Impar ou par? [I/P] ')).strip().lower()[0]
+    ip = ''
+    while ip not in ('i', 'p'):
+        ip = str(input('Impar ou par? [I/P] ')).strip().lower()[0]
     print('=-=' * 20)
     s = pc + pessoa
     print(f'Jogador: {text["azul"]}{pessoa}{text["limpa"]} Computador: {text["vermelho"]}{pc}{text["limpa"]}... Total {s} deu', end=' ')
@@ -42,4 +44,3 @@ while True:
     print('')
     sleep(1.5)
 print(f'GAME OVER! Total de vitórias: {v}')
-   

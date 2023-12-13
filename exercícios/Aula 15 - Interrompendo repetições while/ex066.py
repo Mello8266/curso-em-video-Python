@@ -11,3 +11,4 @@ if cont == 1:
     print(text.replace('dos', 'de').replace('valores', 'valor').replace('digitados', 'digitado'))
 else:
     print(text)
+    

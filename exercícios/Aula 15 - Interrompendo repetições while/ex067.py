@@ -2,7 +2,7 @@
 
 while True:
     n = int(input('Insira um valor e veja sua tabuada: '))
-    if n < 0:
+    if n <= 0:
         break
     print('-' * 20)
     for i in range(1, 11):
