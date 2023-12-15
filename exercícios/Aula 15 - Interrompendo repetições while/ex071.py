@@ -16,7 +16,7 @@ if len(text) >= 3 and valor >= 50:
             break
 text = str(valor)
 if len(text) == 2 and valor >= 20:
-    while True:
+    while True: 
         cedula20 += 1
         valor -= 20
         if valor < 20:
