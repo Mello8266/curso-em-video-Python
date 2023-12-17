@@ -15,8 +15,8 @@ print('=' * 45)
 alfa = sorted(classi)
 print('Em ordem alfabética: ')
 for a in range(1, 21):
-    print(f'{alfa[a]},' if a < 20 else f'{alfa[a]}.', end=' ')
-print('')
+    print(f'{alfa[a]},' if a < 20 else f'{alfa[a]}.')
 print('=' * 45)
 
 print('O Santos está na {}º posição'.format(classi.index('Santos')))
+print('=' * 45)
