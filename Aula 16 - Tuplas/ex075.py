@@ -1,10 +1,12 @@
-a = int(input('Digite um valor: '))
-b = int(input('Digite mais um valor: '))
-c = int(input('Digite outro valor: '))
-d = int(input('Digite o último valor: '))
+tupla = (int(input('Digite um valor: ')),
+        int(input('Digite mais um valor: ')),
+        int(input('Digite outro valor: ')),
+        int(input('Digite o último valor: ')))
 
-tupla = ('', a, b, c, d )
- 
-print(f'Você digitou os valores: {tupla[1:]}')
+print(f'Você digitou os valores: {tupla}')
 print(f'O valor 9 foi digitado: {tupla.count(9)} vezes')
-print(f'O valor 3 está na {tupla.index(3)} posição' if 3 in tupla else 'O valor 3 não foi digitado.')
+print(f'O valor 3 está na {tupla.index(3) + 1} posição' if 3 in tupla else 'O valor 3 não foi digitado.')
+print('Os números pares digitados foram: ', end='')
+for i in tupla:
+    if i % 2 == 0:
+        print(f'{i}', end=' ')

@@ -1,5 +1,4 @@
 classi = ('', 'Palmeiras', 'Grêmio', 'Atlético-MG','Flamengo', 'Botafogo', 'Bragantino', 'Fluminense','Athletico-PR', 'Internacional', 'Fortaleza', 'São Paulo', 'Cuiabá', 'Corinthians', 'Cruzeiro', 'Vasco', 'Bahia', 'Santos', 'Goiás', 'Coritiba', 'América-MG')
-print(len(classi))
 
 print('=' * 45)
 print('Os cinco primeiros colocados são: ')

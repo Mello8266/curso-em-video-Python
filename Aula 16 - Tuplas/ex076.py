@@ -6,6 +6,6 @@ print('=-=' * 10)
 
 for c in setup:
     if type(c) == str:
-        print(f'{c:20}', end='')
+        print(f'{c:.<20}', end='')
     if type(c) == float:
-        print(f'R${c:>8}')
+        print(f'R${c:>8.2f}')
