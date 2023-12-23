@@ -1,12 +1,11 @@
 dado = list()
 cadastro = list()
-cont = menor = maior = 0
+menor = maior = 0
 while True:
     dado.append(str(input('Insira o nome: ')).strip().capitalize())
     dado.append(float(input('Insira o peso: ')))
     cadastro.append(dado[:])
-    cont += 1
-    if cont == 1:
+    if len(cadastro) == 1:
         maior = menor = dado[1]
     if menor > dado[1]:
         menor = dado[1]
@@ -16,7 +15,7 @@ while True:
     conf = str(input('Deseja cadastrar mais pessoas? [S/N] ')).strip().upper()[0]
     if conf in 'N':
         break
-print(f'Você cadastrou {cont} pessoas')
+print(f'Você cadastrou {len(cadastro)} pessoas')
 print(f'O maior peso foi {maior}Kg. Peso de ', end='')
 for c in cadastro:
     if c[1] == maior:

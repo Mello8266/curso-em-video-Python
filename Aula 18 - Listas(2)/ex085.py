@@ -1,16 +1,10 @@
-numero = list()
-impar = list()
-par = list()
-
+numero = [[], []]
 for i in range(0, 7):
     num = int(input('Insira um número: '))
     if num % 2 == 0:
-        par.append(num)
+        numero[0].append(num)
     else:
-        impar.append(num)
-impar.sort()
-par.sort()
-numero.append(par[:])
-numero.append(impar[:])
+        numero[1].append(num)
+numero.sort()
 print(f'Os números impares digitados foram: {numero[0]}')
 print(f'Os números impares digitados foram: {numero[1]}')
