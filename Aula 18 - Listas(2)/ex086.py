@@ -1,6 +1,6 @@
 matriz = list()
 col = list()
-cont = indice = 0
+cont = indice = c = 0
 while indice <= 2:
     col.append(int(input(f'Digite um valor para [{indice}, {cont}]: ')))
     cont += 1
@@ -9,10 +9,9 @@ while indice <= 2:
         matriz.append(col[:])
         col.clear()
         cont -= cont
-for i, c in enumerate(matriz):
-    if i <= 3:
-        print(f'[{c}]', end=' ')
-    elif i <= 6:
-        print(f'\n[{c}]', end=' ')
-    elif i <= 9:
-        print(f'\n[{c}]', end=' ')
+for n in matriz:
+    for i in n:
+        if c == 3 or c == 6 or c == 9:
+            print('')
+        print(f'[{i:^5}]', end='')
+        c += 1
