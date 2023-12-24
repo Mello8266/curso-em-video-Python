@@ -1,17 +1,10 @@
-# alunos [nome[notas]]
 alunos = list()
-nome = list()
-notas = list()
 
 while True:
-    nome.append(str(input('Nome do aluno: ')).strip().capitalize())
-    notas.append(float(input('Nota 1: ')))
-    notas.append(float(input('Nota 2: ')))
-    nome.append(notas[:])
-    alunos.append(nome[:])
-    if len(notas) == 2:
-        notas.clear()
-        nome.clear()
+    nome = str(input('Nome do aluno: ')).strip().capitalize()
+    nota1 = float(input('Nota 1: '))
+    nota2 = float(input('Nota 2: '))
+    alunos.append([nome, [nota1, nota2]])
     conf = str(input('Deseja continuar? ')).strip().upper()[0]
     if conf in 'N':
         break
