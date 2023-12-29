@@ -1,8 +1,10 @@
 nome = str(input('Nome do jogador: ')).strip().capitalize()
 jogo = int(input('Quanta partidas ele jogou? '))
 gols = list()
+
+#? Adicionando valores da lista - gols
 for c in range(1, jogo + 1):
-    gols.append(int(input(f'Quantos gols na partida {c}? ')))
+    gols.append(int(input(f'  Quantos gols na partida {c}? ')))
 dado = {'nome': nome, 'gols': gols, 'total': sum(gols)}
 print('=-' * 20)
 for k, v in dado.items():

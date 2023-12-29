@@ -7,4 +7,4 @@ if media >= 6:
 else: 
     cod['Situação'] = 'desaprovado'
 for k, v in cod.items():
-    print(f'{k} é igual a {v}')
+    print(f'  - {k} é igual a {v}')
