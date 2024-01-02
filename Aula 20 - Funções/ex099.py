@@ -1,9 +1,11 @@
+from time import sleep
 def maior(*num):
     print('-=' * 15)
     print('Analisando os valores...')
     if len(num) > 0:
         for c in num:
-            print(c, end=' ')
+            print(c, end=' ',flush=True)
+            sleep(0.5)
         print(f'Foram informados {len(num)} valores ao todo')
         print(f'O maior valor foi o {max(num)}')
     else:
