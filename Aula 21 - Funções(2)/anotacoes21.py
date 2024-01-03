@@ -61,3 +61,14 @@ r1 = soma(1, 2, 3)
 r2 = soma(1, 2)
 r3 = soma(1)
 print(f'O resultado das somas deu {r1}, {r2}, {r3}')
+
+def par(num=0):
+    if num % 2 == 0:
+        return True
+    else:
+        return False # Pode retornar vários tipos de dados
+num = int(input('Insira um número: '))
+if par(num):
+    print(f'O {num} é par')
+else:
+    print(f'O {num} é impar')
