@@ -4,10 +4,10 @@ def leiaInt(txt):
         n = int(n) 
     else: 
         while True:
-            print('ERROR! Digite um número inteiro.')
+            print('\033[0;31mERROR! Digite um número inteiro.\033[m')
             n = input(f'{txt}')
             if n.isnumeric():
-                n = int(n) 
+                n = int(n)
                 break
     return n
 n = leiaInt('Digite um número: ')

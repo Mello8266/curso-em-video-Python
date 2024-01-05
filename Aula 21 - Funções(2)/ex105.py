@@ -18,13 +18,15 @@ def notas(*num, sit=False):
                'Maior nota': maior,
                'Menor nota': menor,
                'Média da turma': soma/len(num)}
-    if sit == True:
-        if boletim['Média da turma'] > 6:
+    if sit:
+        if boletim['Média da turma'] >= 7:
             boletim['Situação'] = 'Boa'
+        if boletim['Média da turma'] >= 5:
+            boletim['Situação'] = 'Razoável'
         else:
             boletim['Situação'] = 'Ruim'
     return boletim
 
-resp = notas(7, 9.5, 10, 8.5, 10, 10, sit=True)
+resp = notas(7, 9.5, 7, 6.5, sit=True)
 print(resp)
 print(help(notas))

@@ -5,7 +5,6 @@ def fatorial(a, show=False):
     :param show: (Opcional) Mostrar ou não a conta
     :return: Retorna o valor fatorial de um número a
     '''
-    
     cont = a
     resultado = 1
     while cont > 0:
