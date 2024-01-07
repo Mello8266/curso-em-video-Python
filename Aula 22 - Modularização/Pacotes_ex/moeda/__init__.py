@@ -16,21 +16,19 @@ def dobro(n, forma=False):
 
 # Exercício 107
 def aumentar(n, p, forma=False):
-    porcentagem = (p / 100) + 1.00
+    res = n + (n * p / 100)
     if forma:
-        f = n * porcentagem
-        return formatado(f) #! Ex 109
+        return formatado(res) #! Ex 109
     else:
-        return n * porcentagem
+        return res
     
 # Exercício 107
 def diminuir(n, p, forma=False):
-    porcentagem = ((p / 100 ) - 1.00) * - 1
+    res = n - (n * p / 100)
     if forma:
-        f = n * porcentagem
-        return formatado(f) #! Ex 109
+        return formatado(res) #! Ex 109
     else:
-        return n * porcentagem
+        return res
 
 #* Exercício 108
 def moeda(n):

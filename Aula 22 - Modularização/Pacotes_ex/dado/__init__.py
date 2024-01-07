@@ -2,7 +2,7 @@ def leiadinheiro(txt):
     num = 0
     ponto = 0
     while True:
-        n = input(f'{txt}')
+        n = str(input(f'{txt}')).strip()
         if n.isnumeric():
             return float(n)
         else:
