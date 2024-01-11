@@ -2,12 +2,12 @@ def leiaInt(txt):
     while True:
         try:
             inteiro = int(input(txt))
-        except ValueError:
+        except (ValueError, TypeError):
             print('\033[31mErro! Digite um número válido.\033[m')
+            continue # Volta pro laço
         except KeyboardInterrupt:
             print('\033[31mErro! O usuário decidiu não informar nenhum dado.\033[m')
-            inteiro = 0
-            return inteiro
+            return 0
         else:
             return inteiro
 
@@ -17,13 +17,12 @@ def leiaFloat(txt):
             real = float(input(txt))
         except ValueError:
             print('\033[31mErro! Digite um número válido.\033[m')
+            continue
         except KeyboardInterrupt:
             print('\033[31mErro! O usuário decidiu não informar nenhum dado.\033[m')
-            real = 0
-            return real
+            return 0
         else:
             return real
-        
 
 n = leiaInt('Digite um número inteiro: ')
 r = leiaFloat('Digite um número real: ')
